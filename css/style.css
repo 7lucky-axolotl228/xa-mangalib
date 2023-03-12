@@ -187,3 +187,153 @@ body {
 .site-footer-actions-link:hover {
   text-decoration: underline;
 }
+
+/* HERO */
+.hero {
+  width: 860px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+
+
+
+/* HERO-1 */
+.hero-1 {
+  height: 290px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.hero-1-heading {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.hero-1-list {
+  display: flex;
+  list-style: none;
+}
+.hero-1-item {
+  margin-top: 0;
+  margin-left: -15px;
+  margin-bottom: 10px;
+  width: 140px;
+  height: 220px;
+}
+
+.hero-1-item:not(:last-child) {
+  margin-right: 15px;
+}
+
+.hero-1-item-img {
+  margin: 0;
+  object-fit: contain;
+}
+.hero-1-item-title {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+/* HERO-2-1 */
+
+.hero-2 {
+  display: flex;
+}
+.hero-2-1 {
+  width: 420px;
+  height: 250px;
+  padding: 10px;
+  margin-right: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.hero-2-1-heading {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.hero-2-1-list {
+  list-style: none;
+}
+.hero-2-1-item {
+  margin-top: 0;
+  margin-left: -40px;
+  width: 390px;
+}
+.hero-2-1-link {
+  color: #222;
+  text-decoration: none;
+}
+.hero-2-1-link:hover {
+  color: #e48f13;
+  text-decoration: underline;
+}
+
+.hero-2-1-title {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 16px;
+}
+.info {
+  display: flex;
+  font-size: 12px;
+}
+.author {
+  margin-right: 10px;
+}
+
+.author::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.author::before {
+  width: 20px;
+  height: 20px;
+  background-image: url("https://cdn-icons-png.flaticon.com/512/1077/1077114.png");
+}
+
+/* HERO-2-2 */
+.hero-2-2 {
+  width: 420px;
+  height: 250px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.hero-2-2-heading {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.hero-2-2-list {
+  list-style: none;
+}
+.hero-2-2-item {
+  margin-top: 0;
+  margin-left: -40px;
+  width: 390px;
+}
+.hero-2-2-title {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 16px;
+}
+.hero-2-2-link {
+  color: #222;
+  text-decoration: none;
+}
+.hero-2-2-link:hover {
+  color: #e48f13;
+  text-decoration: underline;
+}
