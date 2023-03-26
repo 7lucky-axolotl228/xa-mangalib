@@ -1,5 +1,6 @@
 :root {
   --brand-color: #e48f13;
+  --text-color: #222;
 }
 
 /* GLOBAL */
@@ -37,7 +38,7 @@ body {
 /* CONTAINER */
 .container {
   width: 100%;
-  max-width: 1240px;
+  max-width: 1200px;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
@@ -95,6 +96,10 @@ body {
   background-repeat: no-repeat;
   content: "";
 } */
+
+.site-header-buttons {
+  display: flex;
+}
 
 .site-header-sign-in-button {
   border: 0;
@@ -192,6 +197,18 @@ body {
   text-decoration: underline;
 }
 
+/* WRAPPERS */
+.main-wrapper {
+  display: flex;
+  margin-top: 5px;
+}
+
+.hero-new-chapter-wrapper {
+  flex-direction: column;
+}
+.right-info-wrapper {
+  margin-left: +40px;
+}
 /* HERO */
 .hero {
   width: 860px;
@@ -199,8 +216,6 @@ body {
   margin-bottom: 15px;
   margin-right: 25px;
 }
-
-
 
 
 /* HERO-1 */
@@ -344,13 +359,11 @@ body {
 }
 
 /* INFO ACCOUNT */
-.hero-info-wrapper {
-  display: flex;
-  margin-top: 5px;
-}
+
 
 .info-account {
   width: 285px;
+  height: 975px;
   margin-bottom: 15px;
   padding: 15px;
   border-radius: 5px;
@@ -390,6 +403,7 @@ body {
 .info-account-link {
   margin: 0;
   padding: 0;
+  font-weight: 400;
   text-decoration: none;
   color: #000;
 }
@@ -408,8 +422,81 @@ body {
   margin-right: 40px;
 }
 
-.info-account-score {
+
+/* NEW CHAPTER */
+.new-chapter {
+  width: 900px;
+  margin-left: -40px;
+  border-radius: 5px;
 }
 
-.info-account-level-hr {
+.new-chapter-list {
+  list-style: none;
+}
+
+.new-chapter-item {
+  display: flex;
+  height: 160px;
+  padding-left: 15px;
+  padding-top: 15px;
+  border-bottom: 1px solid gray;
+  background-color: #fff;
+}
+.new-chapter-item:last-child {
+  border: 0;
+}
+
+.new-chapter-img {
+  margin-right: 15px;
+  border-radius: 5px;
+}
+
+.heading-wrapper {
+  height: 30px;
+  margin-top: -25px;
+  padding-bottom: 5px;
+  flex-direction: column;
+}
+
+.new-chapter-heading {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.ru {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.kr {
+  color: gray;
+}
+
+.ru:hover {
+  text-decoration: underline;
+  color: var(--brand-color);
+}
+
+.kr:hover {
+  color: #000;
+}
+
+.new-chapter-heading-ru {
+  margin-bottom: 10px;
+}
+
+.new-chapter-heading-korean {
+  margin-top: -15px;
+  border-bottom: 1px solid var(--brand-color);
+}
+
+.chapter-heading-wrapper {
+}
+
+.latest-chapter {
+}
+
+.latest-chapter-heading {
 }
