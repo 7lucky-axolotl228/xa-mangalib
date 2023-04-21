@@ -1,6 +1,7 @@
 :root {
   --brand-color: #e48f13;
   --text-color: #222;
+  --backgroung-color-white: #fff;
 }
 
 /* GLOBAL */
@@ -126,7 +127,7 @@ body {
 
 /* SITE-FOOTER */
 .site-footer {
-  background-color: #fff;
+  background-color: var(--backgroung-color-white);
 }
 
 .site-header-top-wrapper {
@@ -224,7 +225,7 @@ body {
   padding: 10px;
   margin-bottom: 15px;
   border-radius: 5px;
-  background-color: #fff;
+  background-color: var(--backgroung-color-white);
 }
 .hero-1-heading {
   margin-top: 0;
@@ -270,7 +271,7 @@ body {
   padding: 10px;
   margin-right: 20px;
   border-radius: 5px;
-  background-color: #fff;
+  background-color: var(--backgroung-color-white);
 }
 .hero-2-1-heading {
   margin-top: 0;
@@ -329,7 +330,7 @@ body {
   height: 250px;
   padding: 10px;
   border-radius: 5px;
-  background-color: #fff;
+  background-color: var(--backgroung-color-white);
 }
 .hero-2-2-heading {
   margin-top: 0;
@@ -367,7 +368,7 @@ body {
   margin-bottom: 15px;
   padding: 15px;
   border-radius: 5px;
-  background-color: #fff;
+  background-color: var(--backgroung-color-white);
 }
 
 .info-account-heading {
@@ -440,7 +441,7 @@ body {
   padding-left: 15px;
   padding-top: 15px;
   border-bottom: 1px solid gray;
-  background-color: #fff;
+  background-color: var(--backgroung-color-white);
 }
 .new-chapter-item:last-child {
   border: 0;
@@ -492,11 +493,78 @@ body {
   border-bottom: 1px solid var(--brand-color);
 }
 
-.chapter-heading-wrapper {
+
+
+/* GENRE INFO */
+.genre-info {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: var(--backgroung-color-white);
+}
+.genre-info-title {
+  flex-grow: 1;
+  margin-top: 0;
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--brand-color);
 }
 
-.latest-chapter {
+.genre-info-wrapper {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.latest-chapter-heading {
+.genre-info-item {
+  padding: 4px 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 3px;
+  color: var(--text-color);
+  background-color: rgb(180, 209, 221);
+}
+
+.genre-info-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.genre-info-item:hover {
+  color: var(--brand-color);
+  text-decoration: underline;
+}
+
+
+
+/* CATEGORY-MANGA */
+.category-manga {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: var(--backgroung-color-white);
+}
+.category-manga-title {
+  flex-grow: 1;
+  margin-top: 0;
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--brand-color);
+}
+.category-manga-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.category-manga-item {
+  min-width: 60px;
+  padding: 5px 8px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 3px;
+  background-color: rgb(180, 209, 221);
+}
+
+.category-manga-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.category-manga-item:hover {
+  color: var(--brand-color);
+  text-decoration: underline;
 }
