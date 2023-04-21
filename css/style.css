@@ -427,9 +427,46 @@ body {
 /* NEW CHAPTER */
 .new-chapter {
   width: 900px;
+  margin-top: 0;
   margin-left: -40px;
   border-radius: 5px;
 }
+
+.new-chapter-heading-top {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: +40px;
+  padding-right: 10px;
+  margin-bottom: 0;
+  border-radius: 3px;
+  background-color: var(--backgroung-color-white);
+}
+
+.new-chapter-title {
+  margin: 0;
+  margin-left: +40px;
+  font-size: 16px;
+  border-radius: 4px;
+  color: var(--text-color);
+}
+
+.new-chapter-updates {
+  display: flex;
+  margin-left: +40px;
+}
+
+.new-chapter-all-updates {
+  margin-right: 20px;
+  padding-bottom: 5px;
+  border-bottom: 3px solid var(--brand-color);
+}
+
+.new-chapter-my-updates {
+}
+
+
 
 .new-chapter-list {
   list-style: none;
@@ -438,6 +475,7 @@ body {
 .new-chapter-item {
   display: flex;
   height: 160px;
+  margin-top: 0;
   padding-left: 15px;
   padding-top: 15px;
   border-bottom: 1px solid gray;
@@ -453,6 +491,7 @@ body {
 }
 
 .heading-wrapper {
+  flex-grow: 1;
   height: 30px;
   margin-top: -25px;
   padding-bottom: 5px;
@@ -520,7 +559,7 @@ body {
   margin-bottom: 5px;
   border-radius: 3px;
   color: var(--text-color);
-  background-color: rgb(180, 209, 221);
+  background-color: rgb(211, 236, 247);
 }
 
 .genre-info-item:not(:last-child) {
@@ -557,7 +596,7 @@ body {
   margin-top: 5px;
   margin-bottom: 5px;
   border-radius: 3px;
-  background-color: rgb(180, 209, 221);
+  background-color: rgb(211, 236, 247);
 }
 
 .category-manga-item:not(:last-child) {
