@@ -1,7 +1,10 @@
 :root {
   --brand-color: #e48f13;
   --text-color: #222;
+  --body-bg: rgb(231, 231, 231);
   --backgroung-color-white: #fff;
+  --background-color-skyblue: rgb(211, 236, 247);
+  --transition: 0.4s;
 }
 
 /* GLOBAL */
@@ -31,8 +34,26 @@ body {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background-color: rgb(231, 231, 231);
-  color: #222;
+  background-color: var(--body-bg);
+  color: var(--text-color);
+  transition: background-color var(--transition) ease,
+    color var(--transition) ease;
+}
+
+.dark-mode {
+  --text-color: #fff;
+  --body-bg: rgb(70, 66, 66);
+  --backgroung-color-white: rgb(27, 25, 25);
+  --background-color-skyblue: rgb(124, 153, 165);
+  --brand-color: #e48f13; /* rgb(190, 189, 95) */
+}
+
+.dark-mode-button {
+  width: 30px;
+  height: 30px;
+  border: 0;
+  margin-right: 15px;
+  background-color: var(--brand-color);
 }
 
 
@@ -54,7 +75,10 @@ body {
 
 .site-header-top {
   margin-bottom: 10px;
+  color: var(--text-color);
   background-color: var(--brand-color);
+  transition: background-color var(--transition) ease,
+    color var(--transition) ease;
 }
 
 .site-header-container {
@@ -88,26 +112,24 @@ body {
   text-decoration: none;
 }
 
-/* .catalog::before {
-  width: 20px;
-  height: 20px;
-  background-position: center center;
-  background-size: contain;
-  background-image: url("../img/catalog-before-icon.png");
-  background-repeat: no-repeat;
-  content: "";
-} */
 
+/* BUTTONS */
 .site-header-buttons {
   display: flex;
+  align-items: center;
 }
 
 .site-header-sign-in-button {
+  margin-right: 20px;
   border: 0;
   color: #fff;
   font-size: 18px;
-  margin-right: 20px;
+  text-align: center;
   background-color: var(--brand-color);
+}
+
+.site-header-sign-in-button-moon-icon {
+  margin-right: 5px;
 }
 
 .site-header-sign-up-button {
@@ -127,7 +149,10 @@ body {
 
 /* SITE-FOOTER */
 .site-footer {
+  color: var(--text-color);
   background-color: var(--backgroung-color-white);
+  transition: background-color var(--transition) ease,
+    color var(--transition) ease;
 }
 
 .site-header-top-wrapper {
@@ -226,6 +251,8 @@ body {
   margin-bottom: 15px;
   border-radius: 5px;
   background-color: var(--backgroung-color-white);
+  transition: background-color var(--transition) ease,
+    color var(--transition) ease;
 }
 .hero-1-heading {
   margin-top: 0;
@@ -272,6 +299,8 @@ body {
   margin-right: 20px;
   border-radius: 5px;
   background-color: var(--backgroung-color-white);
+  transition: background-color var(--transition) ease,
+    color var(--transition) ease;
 }
 .hero-2-1-heading {
   margin-top: 0;
@@ -286,7 +315,7 @@ body {
   width: 390px;
 }
 .hero-2-1-link {
-  color: #222;
+  color: var(--text-color);
   text-decoration: none;
 }
 .hero-2-1-link:hover {
@@ -331,6 +360,8 @@ body {
   padding: 10px;
   border-radius: 5px;
   background-color: var(--backgroung-color-white);
+  transition: background-color var(--transition) ease,
+    color var(--transition) ease;
 }
 .hero-2-2-heading {
   margin-top: 0;
@@ -351,7 +382,7 @@ body {
   font-size: 16px;
 }
 .hero-2-2-link {
-  color: #222;
+  color: var(--text-color);
   text-decoration: none;
 }
 .hero-2-2-link:hover {
@@ -369,6 +400,8 @@ body {
   padding: 15px;
   border-radius: 5px;
   background-color: var(--backgroung-color-white);
+  transition: background-color var(--transition) ease,
+    color var(--transition) ease;
 }
 
 .info-account-heading {
@@ -391,7 +424,7 @@ body {
 }
 
 .info-account-item:not(:last-child) {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid var(--text-color);
 }
 
 .info-account-item-img {
@@ -406,7 +439,7 @@ body {
   padding: 0;
   font-weight: 400;
   text-decoration: none;
-  color: #000;
+  color: var(--text-color);
 }
 
 .info-account-link:hover {
@@ -442,6 +475,8 @@ body {
   margin-bottom: 0;
   border-radius: 3px;
   background-color: var(--backgroung-color-white);
+  transition: background-color var(--transition) ease,
+    color var(--transition) ease;
 }
 
 .new-chapter-title {
@@ -463,11 +498,6 @@ body {
   border-bottom: 3px solid var(--brand-color);
 }
 
-.new-chapter-my-updates {
-}
-
-
-
 .new-chapter-list {
   list-style: none;
 }
@@ -480,6 +510,8 @@ body {
   padding-top: 15px;
   border-bottom: 1px solid gray;
   background-color: var(--backgroung-color-white);
+  transition: background-color var(--transition) ease,
+    color var(--transition) ease;
 }
 .new-chapter-item:last-child {
   border: 0;
@@ -511,7 +543,7 @@ body {
 }
 
 .kr {
-  color: gray;
+  color: var(--text-color);
 }
 
 .ru:hover {
@@ -520,7 +552,7 @@ body {
 }
 
 .kr:hover {
-  color: #000;
+  color: var(--brand-color);
 }
 
 .new-chapter-heading-ru {
@@ -540,6 +572,8 @@ body {
   margin-bottom: 20px;
   border-radius: 5px;
   background-color: var(--backgroung-color-white);
+  transition: background-color var(--transition) ease,
+    color var(--transition) ease;
 }
 .genre-info-title {
   flex-grow: 1;
@@ -558,8 +592,8 @@ body {
   margin-top: 5px;
   margin-bottom: 5px;
   border-radius: 3px;
-  color: var(--text-color);
-  background-color: rgb(211, 236, 247);
+  color: #222;
+  background-color: var(--background-color-skyblue);
 }
 
 .genre-info-item:not(:last-child) {
@@ -573,12 +607,16 @@ body {
 
 
 
+
+
 /* CATEGORY-MANGA */
 .category-manga {
   padding: 10px;
   margin-bottom: 20px;
   border-radius: 5px;
   background-color: var(--backgroung-color-white);
+  transition: background-color var(--transition) ease,
+    color var(--transition) ease;
 }
 .category-manga-title {
   flex-grow: 1;
@@ -596,7 +634,8 @@ body {
   margin-top: 5px;
   margin-bottom: 5px;
   border-radius: 3px;
-  background-color: rgb(211, 236, 247);
+  color: #222;
+  background-color: var(--background-color-skyblue);
 }
 
 .category-manga-item:not(:last-child) {
