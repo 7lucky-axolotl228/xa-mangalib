@@ -79,6 +79,12 @@ a:hover {
 }
 
 /* SITE-HEADER */
+.site-header {
+  top: 0;
+  left: 0;
+  position: sticky;
+}
+
 .site-header *:focus {
   outline: 2px dotted #fff;
   outline-offset: 2px;
