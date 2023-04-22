@@ -1,6 +1,7 @@
 :root {
   --brand-color: #e48f13;
   --text-color: #222;
+  --text-color-gray: #666;
   --body-bg: rgb(231, 231, 231);
   --backgroung-color-white: #fff;
   --background-color-skyblue: rgb(211, 236, 247);
@@ -42,6 +43,7 @@ body {
 
 .dark-mode {
   --text-color: #fff;
+  --text-color-gray: rgb(219, 208, 208);
   --body-bg: rgb(70, 66, 66);
   --backgroung-color-white: rgb(27, 25, 25);
   --background-color-skyblue: rgb(124, 153, 165);
@@ -54,6 +56,15 @@ body {
   border: 0;
   margin-right: 15px;
   background-color: var(--brand-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--brand-color);
+  text-decoration: underline;
 }
 
 
@@ -645,4 +656,94 @@ body {
 .category-manga-item:hover {
   color: var(--brand-color);
   text-decoration: underline;
+}
+
+
+
+/* POPULAR MANGA */
+.popular-manga {
+  width: 285px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: var(--backgroung-color-white);
+  transition: background-color var(--transition) ease,
+    color var(--transition) ease;
+}
+
+.popular-manga-heading {
+  flex-grow: 1;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 5px;
+  font-weight: 500;
+  border-bottom: 2px solid var(--brand-color);
+}
+
+.popular-manga-wrapper {
+
+}
+
+.popular-manga-item {
+  display: flex;
+  align-items: center;
+  height: 120px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.popular-manga-item:not(:last-child) {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 1px solid rgb(201, 199, 199);
+}
+
+.popular-manga-item-img {
+  width: 65px;
+  height: 90px;
+  margin-right: 15px;
+  border-radius: 3px;
+  object-fit: cover;
+  box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.2);
+}
+
+.popular-manga-info-title {
+  margin-top: 0;
+  margin-bottom: 5px;
+  padding: 0;
+  font-weight: 400;
+  line-height: 17px;
+}
+.popular-manga-info-title-korean {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--text-color-gray);
+}
+
+.title-link {
+  color: var(--text-color);
+}
+
+.title-korean-link {
+  color: var(--text-color-gray);
+}
+
+.popular-manga-views {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--text-color-gray);
+}
+.views-number {
+  margin-right: 5px;
+}
+.views-icon {
+  width: 20px;
+  height: 20px;
 }
