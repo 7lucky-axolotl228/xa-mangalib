@@ -126,7 +126,10 @@ a:hover {
   font-size: 18px;
   padding: 5px 10px 5px 10px;
   color: #fff;
-  text-decoration: none;
+}
+
+.site-header-item-link:hover {
+  color: #fff;
 }
 
 
